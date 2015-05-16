@@ -1,7 +1,7 @@
 <?php
 	
 	// Set the url of the calendar feed.
-	$url = $_ENV['CALENDAR_URL'];
+	$url = $_SERVER['CALENDAR_URL'];
 
 	/*****************************************/
 
