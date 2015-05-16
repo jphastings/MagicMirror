@@ -204,17 +204,7 @@ jQuery(document).ready(function($) {
 	{
         //see compliments.js
 		while (compliment == lastCompliment) {
-     
-      //Check for current time  
-      var compliments;
-      var date = new Date();
-      var hour = date.getHours();
-      //set compliments to use
-      if (hour >= 3 && hour < 12) compliments = morning;
-      if (hour >= 12 && hour < 17) compliments = afternoon;
-      if (hour >= 17 || hour < 3) compliments = evening;
-
-		compliment = Math.floor(Math.random()*compliments.length);
+			compliment = Math.floor(Math.random()*compliments.length);
 		}
 
 		$('.compliment').updateWithText(compliments[compliment], 4000);
