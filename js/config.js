@@ -6,31 +6,28 @@ var lang = window.navigator.language;
 //change weather params here:
 //units: metric or imperial
 var weatherParams = {
-    'q':'Baarn,Netherlands',
+    'q':'London, GB',
     'units':'metric',
     'lang':lang
 };
 
-var feed = 'http://feeds.nos.nl/nosjournaal?format=rss';
-//var feed = 'http://www.nu.nl/feeds/rss/achterklap.rss';
-//var feed = 'http://www.nu.nl/feeds/rss/opmerkelijk.rss';
-//var feed = 'http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml';
+var feed = 'http://feeds.bbci.co.uk/news/rss.xml';
 
-// compliments:
+// creepy compliments from: http://peoplearenice.blogspot.co.uk/p/compliment-list.html
 var morning = [
-            'Good morning, handsome!',
-            'Enjoy your day!',
-            'How was your sleep?'
-        ];
+  'Morning handsome!',
+  'Enjoy your day!',
+  'If you really wanted to, you could probably get a bird to land on your shoulder and hang out with you.'
+];
         
 var afternoon = [
-            'Hello, beauty!',
-            'You look sexy!',
-            'Looking good today!'
-        ];
+  'You\'re more fun than a barrel of monkeys.',
+  'You are well groomed.',
+  'You could probably lead a rebellion.'
+];
        
 var evening = [
-            'Wow, you look hot!',
-            'You look nice!',
-            'Hi, sexy!'
-        ];
+  'You could survive a zombie apocalypse.',
+  'Last night I had the hiccups, and the only thing that comforted me to sleep was repeating your name over and over.',
+  'You make me think of beautiful things, like strawberries.'
+];
