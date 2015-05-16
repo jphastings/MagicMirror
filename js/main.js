@@ -93,7 +93,7 @@ jQuery(document).ready(function($) {
 	(function updateCalendarData()
 	{
 		new ical_parser("calendar.php", function(cal){
-        	events = cal.getEvents();
+        	events = cal.getEvents(icalEntries);
         	eventList = [];
 
         	for (var i in events) {
