@@ -163,8 +163,13 @@ function ical_parser(feed_url, callback){
 	 *
 	 * @return list of events objects
 	 */
-	this.getEvents = function(){
-		return this.events;
+	this.getEvents = function(count){
+		if (count === undefined) {
+			return this.events;	
+		} else {
+			return this.events.slice(0, count);
+		}
+		
 	}
 	
 	/**
