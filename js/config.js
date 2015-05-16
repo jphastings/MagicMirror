@@ -3,6 +3,8 @@
 // you can change the language
 var lang = 'en';
 
+var icalEntries = 5;
+
 //change weather params here:
 //units: metric or imperial
 var weatherParams = {
